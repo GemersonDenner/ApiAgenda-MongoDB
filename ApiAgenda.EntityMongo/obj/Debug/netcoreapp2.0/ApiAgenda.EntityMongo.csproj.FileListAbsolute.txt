@@ -1,0 +1,9 @@
+C:\Users\Denner\Desktop\Projetos Pessoais\APi-Mongo\ApiAgenda\ApiAgenda.EntityMongo\bin\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.deps.json
+C:\Users\Denner\Desktop\Projetos Pessoais\APi-Mongo\ApiAgenda\ApiAgenda.EntityMongo\bin\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.dll
+C:\Users\Denner\Desktop\Projetos Pessoais\APi-Mongo\ApiAgenda\ApiAgenda.EntityMongo\bin\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.pdb
+C:\Users\Denner\Desktop\Projetos Pessoais\APi-Mongo\ApiAgenda\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.csprojResolveAssemblyReference.cache
+C:\Users\Denner\Desktop\Projetos Pessoais\APi-Mongo\ApiAgenda\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.csproj.CoreCompileInputs.cache
+C:\Users\Denner\Desktop\Projetos Pessoais\APi-Mongo\ApiAgenda\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.AssemblyInfoInputs.cache
+C:\Users\Denner\Desktop\Projetos Pessoais\APi-Mongo\ApiAgenda\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.AssemblyInfo.cs
+C:\Users\Denner\Desktop\Projetos Pessoais\APi-Mongo\ApiAgenda\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.dll
+C:\Users\Denner\Desktop\Projetos Pessoais\APi-Mongo\ApiAgenda\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.pdb
