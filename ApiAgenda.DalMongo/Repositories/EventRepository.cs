@@ -45,5 +45,29 @@ namespace ApiAgenda.DalMongo.Repositories
 				.ToList()
 				.OrderBy(x => x.StartDate);
 		}
+
+		public bool Insert(Guid userId, Event evento)
+		{
+			var fd = Builders<User>.Filter.Eq(x => x.Id, userId);
+			var update = Builders<User>.Update.Push(s => s.Events, evento);
+			return _context.GetDatabase().GetCollection<User>(typeof(User).Name)
+				.UpdateOne(fd, update).ModifiedCount > 0;
+		}
+
+		public bool Update(Guid userId, Event evento)
+		{
+			var fd = Builders<User>.Filter.Eq(x => x.Id, userId);
+			var update = Builders<User>.Update.Push(s => s.Events.Where(e=> e.Id.Equals(evento.Id)), evento);
+			return _context.GetDatabase().GetCollection<User>(typeof(User).Name)
+				.UpdateOne(fd, update).ModifiedCount > 0;
+		}
+
+		public void Delete(Guid userId, Guid idEvent)
+		{
+			var fd = Builders<User>.Filter.Eq(x => x.Id, userId);
+			var update = Builders<User>.Update.PullFilter(x => x.Events, e => e.Id.Equals(idEvent));
+			_context.GetDatabase().GetCollection<User>(typeof(User).Name)
+				.FindOneAndUpdate(fd, update);
+		}
 	}
 }

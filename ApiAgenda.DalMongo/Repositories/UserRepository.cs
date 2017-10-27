@@ -33,6 +33,12 @@ namespace ApiAgenda.DalMongo.Repositories
 				.Project<User>(proj).FirstOrDefault();
 		}
 
+		public void Insert(User user)
+		{
+			_context.GetDatabase().GetCollection<User>(typeof(User).Name)
+				.InsertOne(user);
+		}
+
 		public void UpdateLastLogin(User user)
 		{
 			var fd = Builders<User>.Filter.Eq(x => x.Id, user.Id);

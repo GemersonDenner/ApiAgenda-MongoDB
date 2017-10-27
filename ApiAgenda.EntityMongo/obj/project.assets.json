@@ -4687,11 +4687,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Denner\\Desktop\\Projetos Pessoais\\APi-Mongo\\ApiAgenda\\ApiAgenda.EntityMongo\\ApiAgenda.EntityMongo.csproj",
+      "projectUniqueName": "C:\\Users\\Denner\\Documents\\GitHub\\ApiAgenda-MongoDB\\ApiAgenda.EntityMongo\\ApiAgenda.EntityMongo.csproj",
       "projectName": "ApiAgenda.EntityMongo",
-      "projectPath": "C:\\Users\\Denner\\Desktop\\Projetos Pessoais\\APi-Mongo\\ApiAgenda\\ApiAgenda.EntityMongo\\ApiAgenda.EntityMongo.csproj",
+      "projectPath": "C:\\Users\\Denner\\Documents\\GitHub\\ApiAgenda-MongoDB\\ApiAgenda.EntityMongo\\ApiAgenda.EntityMongo.csproj",
       "packagesPath": "C:\\Users\\Denner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Denner\\Desktop\\Projetos Pessoais\\APi-Mongo\\ApiAgenda\\ApiAgenda.EntityMongo\\obj\\",
+      "outputPath": "C:\\Users\\Denner\\Documents\\GitHub\\ApiAgenda-MongoDB\\ApiAgenda.EntityMongo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

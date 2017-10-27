@@ -26,6 +26,9 @@ namespace ApiAgenda.EntityMongo
 		[BsonElement("CreatedDate")]
 		public DateTime CreatedDate { get; set; }
 
+		[BsonElement("Completed")]
+		public bool IsCompleted { get; set; }
+
 		[BsonElement("Color")]
 		public Color Color { get; set; }
 

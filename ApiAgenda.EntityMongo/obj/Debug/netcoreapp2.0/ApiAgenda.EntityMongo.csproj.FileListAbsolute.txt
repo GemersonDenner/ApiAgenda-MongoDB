@@ -7,3 +7,11 @@ C:\Users\Denner\Desktop\Projetos Pessoais\APi-Mongo\ApiAgenda\ApiAgenda.EntityMo
 C:\Users\Denner\Desktop\Projetos Pessoais\APi-Mongo\ApiAgenda\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.AssemblyInfo.cs
 C:\Users\Denner\Desktop\Projetos Pessoais\APi-Mongo\ApiAgenda\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.dll
 C:\Users\Denner\Desktop\Projetos Pessoais\APi-Mongo\ApiAgenda\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.pdb
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityMongo\bin\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.deps.json
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityMongo\bin\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.dll
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityMongo\bin\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.pdb
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.csproj.CoreCompileInputs.cache
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.AssemblyInfoInputs.cache
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.AssemblyInfo.cs
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.dll
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.pdb

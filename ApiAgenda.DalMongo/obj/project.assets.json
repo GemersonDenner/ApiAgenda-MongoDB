@@ -4706,11 +4706,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Denner\\Desktop\\Projetos Pessoais\\APi-Mongo\\ApiAgenda\\ApiAgenda.DalMongo\\ApiAgenda.DalMongo.csproj",
+      "projectUniqueName": "C:\\Users\\Denner\\Documents\\GitHub\\ApiAgenda-MongoDB\\ApiAgenda.DalMongo\\ApiAgenda.DalMongo.csproj",
       "projectName": "ApiAgenda.DalMongo",
-      "projectPath": "C:\\Users\\Denner\\Desktop\\Projetos Pessoais\\APi-Mongo\\ApiAgenda\\ApiAgenda.DalMongo\\ApiAgenda.DalMongo.csproj",
+      "projectPath": "C:\\Users\\Denner\\Documents\\GitHub\\ApiAgenda-MongoDB\\ApiAgenda.DalMongo\\ApiAgenda.DalMongo.csproj",
       "packagesPath": "C:\\Users\\Denner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Denner\\Desktop\\Projetos Pessoais\\APi-Mongo\\ApiAgenda\\ApiAgenda.DalMongo\\obj\\",
+      "outputPath": "C:\\Users\\Denner\\Documents\\GitHub\\ApiAgenda-MongoDB\\ApiAgenda.DalMongo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4729,8 +4729,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Denner\\Desktop\\Projetos Pessoais\\APi-Mongo\\ApiAgenda\\ApiAgenda.EntityMongo\\ApiAgenda.EntityMongo.csproj": {
-              "projectPath": "C:\\Users\\Denner\\Desktop\\Projetos Pessoais\\APi-Mongo\\ApiAgenda\\ApiAgenda.EntityMongo\\ApiAgenda.EntityMongo.csproj"
+            "C:\\Users\\Denner\\Documents\\GitHub\\ApiAgenda-MongoDB\\ApiAgenda.EntityMongo\\ApiAgenda.EntityMongo.csproj": {
+              "projectPath": "C:\\Users\\Denner\\Documents\\GitHub\\ApiAgenda-MongoDB\\ApiAgenda.EntityMongo\\ApiAgenda.EntityMongo.csproj"
             }
           }
         }

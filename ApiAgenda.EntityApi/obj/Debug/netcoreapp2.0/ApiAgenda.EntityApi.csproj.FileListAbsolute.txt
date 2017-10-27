@@ -1,0 +1,9 @@
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityApi\bin\Debug\netcoreapp2.0\ApiAgenda.EntityApi.deps.json
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityApi\bin\Debug\netcoreapp2.0\ApiAgenda.EntityApi.dll
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityApi\bin\Debug\netcoreapp2.0\ApiAgenda.EntityApi.pdb
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityApi\obj\Debug\netcoreapp2.0\ApiAgenda.EntityApi.csprojResolveAssemblyReference.cache
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityApi\obj\Debug\netcoreapp2.0\ApiAgenda.EntityApi.csproj.CoreCompileInputs.cache
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityApi\obj\Debug\netcoreapp2.0\ApiAgenda.EntityApi.AssemblyInfoInputs.cache
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityApi\obj\Debug\netcoreapp2.0\ApiAgenda.EntityApi.AssemblyInfo.cs
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityApi\obj\Debug\netcoreapp2.0\ApiAgenda.EntityApi.dll
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityApi\obj\Debug\netcoreapp2.0\ApiAgenda.EntityApi.pdb
