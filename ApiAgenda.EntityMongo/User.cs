@@ -28,6 +28,18 @@ namespace ApiAgenda.EntityMongo
 		public User()
 		{
 			this.Id = Guid.NewGuid();
+			Events = new List<Event>();
+		}
+
+		public User(string login, string senha)
+		{
+			this.Login = login;
+			this.Password = senha;
+		}
+
+		public bool Founded()
+		{
+			return !string.IsNullOrEmpty(this.Login);
 		}
 	}
 }

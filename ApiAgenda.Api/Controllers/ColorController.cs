@@ -5,27 +5,39 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ApiAgenda.DalMongo;
+using ApiAgenda.DalMongo.Repositories;
 using ApiAgenda.EntityApi;
 using ApiAgenda.EntityMongo;
-
+using AutoMapper;
 
 namespace ApiAgenda.Api.Controllers
 {
 	[Route("api/Color")]
 	public class ColorController : Controller
-    {
-        // GET: api/Color
-        [HttpGet]
-        public IEnumerable<EntityApi.Color> GetAll()
-        {
-            return null;
+	{
+		public IMapper Mapper { get; }
+
+		public ColorRepository colorRepository { get; }
+
+		public ColorController(AgendaMongoContext context, IMapper mapper)
+		{
+			colorRepository = new ColorRepository(context);
+			Mapper = mapper;
 		}
-        
-        // POST: api/Color
-        [HttpPost]
-        public void Create([FromBody]EntityApi.Color newColor)
-        {
-        }
-        
-    }
+		// GET: api/Color
+		[HttpGet("GetAll/")]
+		public IEnumerable<EntityApi.Color> GetAll()
+		{
+			return Mapper.Map<IEnumerable<EntityApi.Color>>(colorRepository.GetAll());
+		}
+
+		// POST: api/Color
+		[HttpPost("Create/")]
+		public void Create([FromBody]EntityApi.Color newColor)
+		{
+			var newColorMDB = Mapper.Map<EntityMongo.Color>(newColor);
+			colorRepository.Include(newColorMDB);
+		}
+
+	}
 }

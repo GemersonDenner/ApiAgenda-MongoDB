@@ -18,10 +18,7 @@ namespace ApiAgenda.DalMongo.Repositories
 			var fd = Builders<User>.Filter.Eq(x => x.Id, userId);
 			var proj = Builders<User>.Projection.Include(x => x.Events);
 			return _context.GetDatabase().GetCollection<User>(typeof(User).Name)
-				.Find(fd)
-				.Project<Event>(proj)
-				.ToList()
-				.OrderBy(x => x.StartDate);
+				.Find(fd).FirstOrDefault().Events;
 		}
 
 		public IEnumerable<Event> Get(Guid userId, DateTime startDate, DateTime endDate)
@@ -49,6 +46,7 @@ namespace ApiAgenda.DalMongo.Repositories
 		public bool Insert(Guid userId, Event evento)
 		{
 			var fd = Builders<User>.Filter.Eq(x => x.Id, userId);
+			//var update = Builders<User>.Update.Push("")
 			var update = Builders<User>.Update.Push(s => s.Events, evento);
 			return _context.GetDatabase().GetCollection<User>(typeof(User).Name)
 				.UpdateOne(fd, update).ModifiedCount > 0;
@@ -56,8 +54,9 @@ namespace ApiAgenda.DalMongo.Repositories
 
 		public bool Update(Guid userId, Event evento)
 		{
-			var fd = Builders<User>.Filter.Eq(x => x.Id, userId);
-			var update = Builders<User>.Update.Push(s => s.Events.Where(e=> e.Id.Equals(evento.Id)), evento);
+
+			var fd = Builders<User>.Filter.Where(x => x.Id.Equals(userId) && x.Events.Any(a => a.Id.Equals(evento.Id)));
+			var update = Builders<User>.Update.Set(x => x.Events[-1], evento);
 			return _context.GetDatabase().GetCollection<User>(typeof(User).Name)
 				.UpdateOne(fd, update).ModifiedCount > 0;
 		}

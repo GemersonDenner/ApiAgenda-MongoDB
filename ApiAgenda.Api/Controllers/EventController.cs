@@ -7,51 +7,63 @@ using Microsoft.AspNetCore.Mvc;
 using ApiAgenda.DalMongo;
 using ApiAgenda.EntityApi;
 using ApiAgenda.EntityMongo;
+using AutoMapper;
+using ApiAgenda.DalMongo.Repositories;
 
 namespace ApiAgenda.Api.Controllers
 {
 	[Route("api/Evento")]
 	public class EventController : Controller
-    {
+	{
+		public IMapper Mapper { get; }
+
+		public EventRepository eventRepository { get; }
+
+		public EventController(AgendaMongoContext context, IMapper mapper)
+		{
+			eventRepository = new EventRepository(context);
+			Mapper = mapper;
+		}
 		//[HttpGet]
-		[HttpGet("{userId}", Name = "GetAll")]
+		[HttpGet("GetAll/{userId}", Name = "GetAll")]
 		public IEnumerable<EntityApi.Event> GetAll(Guid userId)
-        {
-            return null;
+		{
+			return Mapper.Map<IEnumerable<EntityApi.Event>>(eventRepository.GetAll(userId));
 		}
 
 		//[HttpGet]
-		[HttpGet("{userId}&{startDate}&{endDate}", Name = "GetWithRange")]
+		[HttpGet("GetWithRange/{userId}&{startDate}&{endDate}", Name = "GetWithRange")]
 		public IEnumerable<EntityApi.Event> GetWithRange(Guid userId, DateTime startDate, DateTime endDate)
 		{
-			return null;
+			return Mapper.Map<IEnumerable<EntityApi.Event>>(eventRepository.Get(userId, startDate, endDate));
 		}
 
 		//[HttpGet]
-		[HttpGet("{userId}&{startDate}", Name = "GetWithStart")]
+		[HttpGet("GetWithStart/{userId}&{startDate}", Name = "GetWithStart")]
 		public IEnumerable<EntityApi.Event> GetWithStart(Guid userId, DateTime startDate)
 		{
-			return null;
+			return Mapper.Map<IEnumerable<EntityApi.Event>>(eventRepository.Get(userId, startDate));
 		}
 
-		// POST: api/Event
-		[HttpPost]
-        public void Create(Guid idUser, [FromBody]EntityApi.Event evento)
-        {
-        }
+		[HttpPost("Create/")]
+		public void Create(Guid idUser, [FromBody]EntityApi.Event evento)
+		{
+			var eventoMDB = Mapper.Map<EntityMongo.Event>(evento);
+			eventRepository.Insert(idUser, eventoMDB);
+		}
 
-		// POST: api/Event
-		[HttpPost("{idUser}")]
+		[HttpPost("Update/{idUser}", Name = "Update")]
 		public void Update(Guid idUser, [FromBody]EntityApi.Event evento)
 		{
+			var eventoMDB = Mapper.Map<EntityMongo.Event>(evento);
+			eventoMDB.Id = evento.Id;
+			eventRepository.Update(idUser, eventoMDB);
 		}
 
-
-		//[HttpDelete]
-		// DELETE: api/ApiWithActions/5
-		[HttpDelete("{idUser}&{idEvent}")]
+		[HttpDelete("Delete/{idUser}&{idEvent}")]
 		public void Delete(Guid idUser, Guid idEvent)
-        {
-        }
-    }
+		{
+			eventRepository.Delete(idUser, idEvent);
+		}
+	}
 }

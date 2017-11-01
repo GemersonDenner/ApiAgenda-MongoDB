@@ -15,3 +15,4 @@ C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityMongo\obj\Deb
 C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.AssemblyInfo.cs
 C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.dll
 C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.pdb
+C:\Users\Denner\Documents\GitHub\ApiAgenda-MongoDB\ApiAgenda.EntityMongo\obj\Debug\netcoreapp2.0\ApiAgenda.EntityMongo.csprojResolveAssemblyReference.cache
