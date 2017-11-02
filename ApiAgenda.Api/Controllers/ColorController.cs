@@ -33,7 +33,7 @@ namespace ApiAgenda.Api.Controllers
 
 		// POST: api/Color
 		[HttpPost("Create/")]
-		public void Create([FromBody]EntityApi.Color newColor)
+		public void Create([FromBody]EntityApi.ColorCreateRequest newColor)
 		{
 			var newColorMDB = Mapper.Map<EntityMongo.Color>(newColor);
 			colorRepository.Include(newColorMDB);

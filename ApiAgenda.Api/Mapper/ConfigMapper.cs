@@ -17,19 +17,21 @@ namespace ApiAgenda.Api.Mapper
 				x => x.Id,
 				y => y.Ignore());
 
+			CreateMap<EntityApi.ColorCreateRequest, EntityMongo.Color>();
+
 			CreateMap<EntityMongo.Event, EntityApi.Event>();
 			CreateMap<EntityApi.Event, EntityMongo.Event>()
 				.ForMember(
 				x => x.Id,
 				y => y.Ignore());
 
+			CreateMap<EntityApi.EventCreateRequest, EntityMongo.Event>();
+
 			CreateMap<EntityMongo.User, EntityApi.User>();
 			CreateMap<EntityApi.User, EntityMongo.User>()
 				.ForMember(
 				x => x.Id,
 				y => y.Ignore());
-
-			CreateMap<EntityApi.CreateUser, EntityMongo.User>();
 		}
 	}
 }

@@ -46,7 +46,7 @@ namespace ApiAgenda.Api.Controllers
 		}
 
 		[HttpPost("Create/")]
-		public void Create(Guid idUser, [FromBody]EntityApi.Event evento)
+		public void Create(Guid idUser, [FromBody]EntityApi.EventCreateRequest evento)
 		{
 			var eventoMDB = Mapper.Map<EntityMongo.Event>(evento);
 			eventRepository.Insert(idUser, eventoMDB);

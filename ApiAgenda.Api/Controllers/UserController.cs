@@ -27,10 +27,10 @@ namespace ApiAgenda.Api.Controllers
 
 		//[HttpGet]
 		// GET: api/User/5
-		[HttpGet("Get/{login}&{senha}", Name = "Get")]
-		public EntityApi.User Get(string login, string senha)
+		[HttpGet("Get/", Name = "Get")]
+		public EntityApi.User Get(LoginUserRequest loginRequest)
 		{
-			var user = new EntityMongo.User(login, senha);
+			var user = new EntityMongo.User(loginRequest.Login, loginRequest.Password);
 			var foundedUser = UserRepository.Get(user);
 			if (foundedUser.Founded())
 			{
